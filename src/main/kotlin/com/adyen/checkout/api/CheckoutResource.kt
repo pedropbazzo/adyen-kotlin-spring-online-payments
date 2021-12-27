@@ -26,7 +26,7 @@ import java.util.*
 class CheckoutResource(@Value("\${ADYEN_API_KEY}") apiKey: String?) {
     private val log = LoggerFactory.getLogger(CheckoutResource::class.java)
 
-    @Value("\${ADYEN_MERCHANT_ACCOUNT}")
+    @Value("\${ADYEN_MERCHANT_ACCOUNT}") 
     private val merchantAccount: String? = null
 
     private val checkout: Checkout
